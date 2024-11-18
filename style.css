@@ -59,7 +59,6 @@ header {
     display: flex;
     text-align: center;
     width: 100%;
-    max-width: no;
     height: 400px;
     box-shadow: 5px 8px 12px #92817A;
 
