@@ -1,0 +1,22 @@
+/*  GENERAL  */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Alatsi", sans-serif;
+    background-color: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*  menu-imagen boostrap  */
+.d-block {
+    height: 300px;
+    box-shadow: 5px 8px 12px black;
+}

@@ -59,3 +59,35 @@ main {
         text-align: center;
     }
 }
+
+@media screen and (max-width: 1024px) {
+
+    .img-index {
+        height: 300px;
+    }
+
+    .titulo2-index {
+        font-size: 50px;
+    }
+
+    .catalogo-index {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .img-index {
+        height: 300px;
+    }
+
+    .titulo2-index {
+        font-size: 50px;
+    }
+
+    .catalogo-index {
+        width: 300px;
+        height: 400px;
+    }
+}
