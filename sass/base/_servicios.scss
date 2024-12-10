@@ -1,0 +1,45 @@
+.titulo-servicios {
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 5px 8px 12px black;
+    padding: 20px;
+}
+
+.flex-servicios {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+
+.img-servicios {
+    height: 500px;
+    width: 500px;
+    box-shadow: 5px 8px 12px black;
+}
+
+.parrafo-servicios {
+    width: 500px;
+    height: 500px;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {}
+
+.flex-servicios {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.parrafo-servicios {
+    width: 800px;
+    height: 300px;
+    font-size: 1.5rem;
+}
+
+.img-servicios {
+    height: 500px;
+    width: 800px;
+
+}

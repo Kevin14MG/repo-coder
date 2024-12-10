@@ -36,7 +36,7 @@ header {
 .logo img {
     width: 200px;
     height: 40px;
-    float: inline-start;
+    float: inline-start;   
 }
 
 .navbar-collapse {

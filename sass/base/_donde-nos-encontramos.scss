@@ -1,0 +1,50 @@
+/*  donde nos encontramos (dne) */
+
+main {
+    h2 {
+        font-size: 50px;
+        text-align: center;
+        padding: 15px;
+        text-shadow: 5px 8px 12px white;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-around;
+       
+
+        div {
+            img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .direccion.dne {
+                font-size: 40px;
+            }
+
+            .descripcion-direccion {
+                font-size: 20px;
+                width: 500px;
+                height: 200px;
+            }
+        }
+    }
+    div {
+        iframe {
+            border-radius: 15px;
+            box-shadow: 5px 8px 12px black;
+            margin-left: 70vh;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .todo-dne {
+        display: grid;
+        grid-template-rows: (2, 1fr);
+        gap: 50px;
+    }
+
+}
