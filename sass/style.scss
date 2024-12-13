@@ -1,12 +1,13 @@
 
 // import de las paginas
-@import "./base/index";
-@import "./base/productos";
-@import "./base/contacto";
-@import "./base/servicios";
-@import "./base/donde-nos-encontramos";
+@use "./base/index" as *;
+@use "./base/productos" as *;
+@use "./base/contacto" as *;
+@use "./base/servicios" as *;
+@use "./base/donde-nos-encontramos" as *;
 
 // import del menu, redes sociales y el html en general
-@import "./base/general";
-@import "./base/header";
-@import "./base/footer;
+@use "./base/general" as *;
+@use "./base/header" as *;
+@use "./base/footer" as *;
+
