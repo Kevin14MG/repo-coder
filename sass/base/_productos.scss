@@ -14,10 +14,6 @@
 
 }
 
-.item {
-    font-size: 22px;
-}
-
 .image-2 img {
     width: 99%;
     height: 500px;
@@ -46,6 +42,15 @@
     display: flex;
     align-items: center;
     justify-content: left;
+    font-size: 10px;
+}
+
+main {
+    div {
+        h4 {
+            font-size: 22px;
+        }
+    }
 }
 
 

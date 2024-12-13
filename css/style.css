@@ -82,10 +82,6 @@ main .textorelacionadoindex {
   gap: 10px;
 }
 
-.item {
-  font-size: 22px;
-}
-
 .image-2 img {
   width: 99%;
   height: 500px;
@@ -113,6 +109,11 @@ main .textorelacionadoindex {
   display: flex;
   align-items: center;
   justify-content: left;
+  font-size: 10px;
+}
+
+main div h4 {
+  font-size: 22px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -131,10 +132,7 @@ main .textorelacionadoindex {
 }
 /*  CONTACTO  */
 /*  Titulo e Imagen  */
-main div {
-  position: relative;
-}
-main div .titulo-contacto {
+.titulo-contacto {
   font-size: 60px;
   color: whitesmoke;
   text-shadow: 5px 8px 12px #000000;
@@ -144,7 +142,8 @@ main div .titulo-contacto {
   padding: 0px;
   position: absolute;
 }
-main div .subtitulo-contacto {
+
+.subtitulo-contacto {
   font-size: 30px;
   color: whitesmoke;
   text-shadow: 5px 12px 12px black;
@@ -154,7 +153,12 @@ main div .subtitulo-contacto {
   padding: 0px;
   position: absolute;
 }
-main div img {
+
+.contacto {
+  position: relative;
+}
+
+.imagen-contacto {
   height: 500px;
   width: 100%;
   padding: 0px;
@@ -162,19 +166,21 @@ main div img {
 }
 
 /*  Formulario  */
-section {
+.formulario-contacto {
   width: 400px;
   padding: 15px;
   margin: 10px;
   border-radius: 10px;
   text-align: left;
 }
-section h3 {
+
+.formulario-contacto h3 {
   font-size: 40px;
-  margin-bottom: 20px;
   text-align: center;
+  display: flex;
 }
-section div form ul li input {
+
+.inputs {
   font-size: 20px;
   width: 100%;
   padding: 10px;
@@ -184,10 +190,12 @@ section div form ul li input {
   box-shadow: 5px 8px 12px black;
   border: none;
 }
-section div form ul li label {
+
+.formulario-contacto form label {
   font-size: 20px;
 }
-section div form textarea {
+
+.textarea {
   font-size: 20px;
   height: 200px;
   width: 500px;
@@ -195,30 +203,29 @@ section div form textarea {
   border: none;
   box-shadow: 5px 8px 12px black;
 }
-section div form .botton {
+
+.botton {
   font-size: 20px;
   border: none;
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
   box-shadow: 5px 8px 12px black;
-  position: absolute;
-  left: 460px;
 }
 
 /*  Logo y texto adicional */
+.texto-contacto {
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-template-rows: 1, 1fr;
+  justify-content: right;
+}
 .texto-contacto img {
-  position: absolute;
-  top: 650px;
-  right: 20%;
   width: 400px;
   height: 100px;
 }
 .texto-contacto p {
   font-size: 20px;
-  position: absolute;
-  top: 740px;
-  right: 20%;
   width: 400px;
   height: 100px;
   text-align: center;
@@ -247,7 +254,7 @@ section div form .botton {
 
 .flex-servicios {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   list-style: none;
 }
 
@@ -255,6 +262,7 @@ section div form .botton {
   height: 500px;
   width: 500px;
   box-shadow: 5px 8px 12px black;
+  border-radius: 5px;
 }
 
 .parrafo-servicios {
@@ -262,6 +270,7 @@ section div form .botton {
   height: 500px;
   font-size: 20px;
   text-align: center;
+  margin-top: 15px;
 }
 
 .flex-servicios {
@@ -306,7 +315,7 @@ main section div .descripcion-direccion {
 main div iframe {
   border-radius: 15px;
   box-shadow: 5px 8px 12px black;
-  margin-left: 70vh;
+  margin-left: 25vh;
 }
 
 @media screen and (max-width: 1024px) {
