@@ -7,5 +7,7 @@ y con el tema del span con el logo y informacion abajo me quedo sobreexpuesto al
 -Servicios: 
 las imagenes no estan centradas. 
 
+-Index:
+No anda el header por lo que veo esta bien linkeado nose que podra ser
 
 
