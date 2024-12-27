@@ -109,60 +109,47 @@ main .textorelacionadoindex {
   display: flex;
   align-items: center;
   justify-content: left;
-  font-size: 10px;
+  font-size: px;
 }
 
 main div h4 {
-  font-size: 22px;
+  font-size: 30px;
+  padding: 20px;
+  margin: 20px;
 }
 
 @media screen and (max-width: 1024px) {
-  .grid-container {
-    gap: 20px;
+  main div h4 {
+    text-align: center;
   }
-  .item {
-    font-size: 18px;
-  }
-  .text-2 {
-    margin-right: 10px;
-  }
-  .text {
-    margin-left: 10px;
+  main .grid-container {
+    display: flex;
+    flex-direction: column;
   }
 }
 /*  CONTACTO  */
 /*  Titulo e Imagen  */
-.titulo-contacto {
+.contacto {
+  background-image: url(/assets/img/foto-del-frente-2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 15px;
+}
+.contacto h2 {
   font-size: 60px;
   color: whitesmoke;
   text-shadow: 5px 8px 12px #000000;
-  top: 10px;
-  left: 20px;
-  margin: 0px;
-  padding: 0px;
-  position: absolute;
+  display: flex;
+  align-items: start;
 }
-
-.subtitulo-contacto {
+.contacto h3 {
   font-size: 30px;
   color: whitesmoke;
   text-shadow: 5px 12px 12px black;
-  top: 76px;
-  left: 190px;
-  margin: 0px;
-  padding: 0px;
-  position: absolute;
-}
-
-.contacto {
-  position: relative;
-}
-
-.imagen-contacto {
-  height: 500px;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
 }
 
 /*  Formulario  */
@@ -172,6 +159,8 @@ main div h4 {
   margin: 10px;
   border-radius: 10px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .formulario-contacto h3 {
@@ -215,10 +204,10 @@ main div h4 {
 
 /*  Logo y texto adicional */
 .texto-contacto {
-  display: grid;
-  grid-template-columns: 2, 1fr;
-  grid-template-rows: 1, 1fr;
-  justify-content: right;
+  display: flex;
+  flex-direction: column;
+  margin-left: 60%;
+  margin-bottom: 500px;
 }
 .texto-contacto img {
   width: 400px;
@@ -243,6 +232,23 @@ main div h4 {
     right: 80px;
     top: 41%;
     padding-top: 5px;
+  }
+}
+@media screen and (max-width: 720px) {
+  main .contacto {
+    background-image: url(/assets/img/foto-del-frente-2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+  main .contacto h2 {
+    font-size: 24px;
+  }
+  main .contacto h3 {
+    font-size: 20px;
+  }
+  main div form .textarea {
+    width: 80%;
   }
 }
 .titulo-servicios {
@@ -356,25 +362,37 @@ header {
   padding: 15px;
 }
 header .logo img {
-  width: 200px;
+  width: 150px;
   height: 40px;
   float: inline-start;
+  padding-right: 20px;
 }
 header .navbar-collapse {
   font-size: 20px;
   z-index: 1050;
   text-shadow: 0 0 5px black;
+  width: 100%;
 }
 header .nav-link {
   color: white;
 }
 
+@media screen and (max-width: 1023px) {
+  .nav-link {
+    background: linear-gradient(220.55deg, #565656 0%, #181818 100%);
+    padding: 10px;
+  }
+  .navbar-collapse {
+    padding: 6px;
+  }
+}
 /*  footer/redes sociales  */
 footer ul li a img {
   width: 40px;
 }
 footer .redessociales {
   display: flex;
+  align-items: center;
   justify-content: space-around;
   margin-bottom: 50px;
   margin-top: 50px;

@@ -42,32 +42,33 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    font-size: 10px;
+    font-size: px;
 }
 
 main {
     div {
         h4 {
-            font-size: 22px;
+            font-size: 30px;
+            padding: 20px;
+            margin: 20px;
         }
     }
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) { 
+
+    main {
+        div {
+            h4 {
+                text-align: center;
+            }
+        }
     .grid-container {
-        gap: 20px;
-    }
+        display: flex;
+        flex-direction: column;
 
-    .item {
-        font-size: 18px;
-    }
-
-    .text-2 {
-        margin-right: 10px;
-    }
-
-    .text {
-        margin-left: 10px;
     }
 }
+}
+

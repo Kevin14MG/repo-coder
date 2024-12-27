@@ -7,22 +7,31 @@ header {
     padding: 15px;
 
     .logo img {
-        width: 200px;
+        width: 150px;
         height: 40px;
         float: inline-start;
-
-
+        padding-right: 20px;
     }
 
     .navbar-collapse {
         font-size: 20px;
         z-index: 1050;
         text-shadow: 0 0 5px black;
-
+        width: 100%;
     }
 
     .nav-link {
-
         color: white;
+
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .nav-link {
+        background: linear-gradient(220.55deg, #565656 0%, #181818 100%);
+        padding: 10px;
+    }
+    .navbar-collapse {
+        padding: 6px;
     }
 }

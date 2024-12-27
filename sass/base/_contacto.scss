@@ -1,39 +1,35 @@
 /*  CONTACTO  */
 
 /*  Titulo e Imagen  */
-.titulo-contacto {
-    font-size: 60px;
-    color: whitesmoke;
-    text-shadow: 5px 8px 12px #000000;
-    top: 10px;
-    left: 20px;
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-
-}
-
-.subtitulo-contacto {
-    font-size: 30px;
-    color: whitesmoke;
-    text-shadow: 5px 12px 12px black;
-    top: 76px;
-    left: 190px;
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-}
 
 .contacto {
+    background-image: url(/assets/img/foto-del-frente-2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
     position: relative;
+    flex-direction: column;
+    padding: 15px;
+    
+    h2 {
+        font-size: 60px;
+        color: whitesmoke;
+        text-shadow: 5px 8px 12px #000000;
+        display: flex;
+        align-items: start;
+
+    }
+
+    h3 {
+        font-size: 30px;
+        color: whitesmoke;
+        text-shadow: 5px 12px 12px black;
+    }
+
 }
 
-.imagen-contacto {
-    height: 500px;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-}
+
 
 /*  Formulario  */
 
@@ -43,8 +39,8 @@
     margin: 10px;
     border-radius: 10px;
     text-align: left;
-
-
+    display: flex;
+    flex-direction: column;
 }
 
 .formulario-contacto {
@@ -93,22 +89,22 @@
 
 /*  Logo y texto adicional */
 .texto-contacto {
-    display: grid;
-    grid-template-columns: 2, 1fr;
-    grid-template-rows: 1, 1fr;
-    justify-content: right;
-    
+display: flex;
+flex-direction: column;
+margin-left: 60%;
+margin-bottom: 500px;
     img {
         width: 400px;
         height: 100px;
     }
-
     p {
         font-size: 20px;
         width: 400px;
         height: 100px;
         text-align: center;
     }
+
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -126,4 +122,30 @@
         top: 41%;
         padding-top: 5px;
     }
+}
+@media screen and (max-width: 720px) {
+main {
+    .contacto {
+
+        background-image: url(/assets/img/foto-del-frente-2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+
+        h2 {
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+    div {
+        form {
+            .textarea {
+                width: 80%;
+            }
+        }
+    }
+}
+
 }
